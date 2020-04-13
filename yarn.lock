@@ -856,10 +856,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@clusterws/cws@^0.17.3":
-  version "0.17.3"
-  resolved "https://registry.yarnpkg.com/@clusterws/cws/-/cws-0.17.3.tgz#64ce6a34b2bd357c29bdc0675f27b37279e8661f"
-  integrity sha512-5WSpxwD8yIIWPTyMspS/IDBp1d4yHnK4A0pjIzYGS1EmJHKylc4jgMiG66qbirjxZ9/IlzuvmYCgaXA+TQbe+A==
+"@clusterws/cws@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@clusterws/cws/-/cws-1.6.0.tgz#cd7fb0f03cc19338bb32b1310200b0724865cad4"
+  integrity sha512-oHSKy1rT+agUsYzeT3mjg1p+c8KIzjQyoAhcavAZyfpxw0Xbs62qBDiPDd/WbQqF6CQUzciA4clmdViSab6Byw==
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.3"
@@ -9684,14 +9684,6 @@ sax@^1.2.4, sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
-
-scheduler@^0.18.0:
-  version "0.18.0"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.18.0.tgz#5901ad6659bc1d8f3fdaf36eb7a67b0d6746b1c4"
-  integrity sha512-agTSHR1Nbfi6ulI0kYNK0203joW2Y5W4po4l+v03tOoiJKpTBbxpNhWDvqc/4IcOw+KLmSiQLTasZ4cab2/UWQ==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
 
 scheduler@^0.19.0:
   version "0.19.0"
