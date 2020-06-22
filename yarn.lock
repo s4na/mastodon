@@ -946,6 +946,20 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.4.tgz#622a72bebd1e3f48d921563b4b60a762295a81fc"
   integrity sha512-6PYY5DVdAY1ifaQW6XYTnOMihmBVT27elqSjEoodchsGjzYlEsTQMcEhSud99kVawatyTZRTiVkJ/c6lwbQ7nA==
 
+"@formatjs/intl-numberformat@^4.2.7":
+  version "4.2.7"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-numberformat/-/intl-numberformat-4.2.7.tgz#7c4976312a0cbfc174a5902281dde50cd3719cd1"
+  integrity sha512-eXBWegYQUANkPqHSAZ1cQ2ajYGBscQ3Aue+xVl1Fc9jEUmQSR4LBgAv0+GEHTlwtqAVaRQ+NYSDbOk7SORnESA==
+  dependencies:
+    "@formatjs/intl-utils" "^3.4.0"
+
+"@formatjs/intl-utils@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-3.4.0.tgz#91fcaffcf3925feab888b4a9bad08a51bd0365be"
+  integrity sha512-rP79Y0e6tWXYO+DBddfIi3TFBh0/wE4x+XCDf43nDcnXD5OUTwLBDX521+e0wwDByq6rc/9Bu/W5llwaBsy6bQ==
+  dependencies:
+    emojis-list "^3.0.0"
+
 "@gamestdio/websocket@^0.3.2":
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/@gamestdio/websocket/-/websocket-0.3.2.tgz#321ba0976ee30fd14e51dbf8faa85ce7b325f76a"
@@ -5529,6 +5543,11 @@ intl-format-cache@^2.0.5:
   resolved "https://registry.yarnpkg.com/intl-format-cache/-/intl-format-cache-2.1.0.tgz#04a369fecbfad6da6005bae1f14333332dcf9316"
   integrity sha1-BKNp/sv61tpgBbrh8UMzMy3PkxY=
 
+intl-format-cache@^4.2.39:
+  version "4.2.39"
+  resolved "https://registry.yarnpkg.com/intl-format-cache/-/intl-format-cache-4.2.39.tgz#c23eca561d48e72d9ee018344ecf5eeb77cea4d1"
+  integrity sha512-vhqfBlvmYPovKSSqYlTOB0eX+/GvFRTezylMc/S9B0Oo86J5Wve/SkZ6fdwTGFYG7mtPuplaFQwMBA59wbOj5A==
+
 intl-messageformat-parser@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-1.4.0.tgz#b43d45a97468cadbe44331d74bb1e8dea44fc075"
@@ -5539,12 +5558,27 @@ intl-messageformat-parser@^1.7.1:
   resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-1.8.1.tgz#0eb14c5618333be4c95c409457b66c8c33ddcc01"
   integrity sha512-IMSCKVf0USrM/959vj3xac7s8f87sc+80Y/ipBzdKy4ifBv5Gsj2tZ41EAaURVg01QU71fYr77uA8Meh6kELbg==
 
-intl-messageformat@^2.0.0, intl-messageformat@^2.1.0, intl-messageformat@^2.2.0:
+intl-messageformat-parser@^5.1.4:
+  version "5.1.4"
+  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-5.1.4.tgz#53b8a2bbe2b615c5d3d643ad8beba024d8bb1554"
+  integrity sha512-q0SRG8eSbQ1ET1heE9DjyvzFjMALrAN84G5Xx02R7ArpSeRpXn5347++akxCJL7tgpF1csrlYlqiizHzjGIX0Q==
+  dependencies:
+    "@formatjs/intl-numberformat" "^4.2.7"
+
+intl-messageformat@^2.0.0, intl-messageformat@^2.1.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-2.2.0.tgz#345bcd46de630b7683330c2e52177ff5eab484fc"
   integrity sha1-NFvNRt5jC3aDMwwuUhd/9eq0hPw=
   dependencies:
     intl-messageformat-parser "1.4.0"
+
+intl-messageformat@^8.3.24:
+  version "8.3.24"
+  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-8.3.24.tgz#f1f4422e6a27ea13de4bd7a8e05edb14aabf0056"
+  integrity sha512-513pFNaQdyFpJ4FRRyUcszy395E6UUPRYZHlKy/uuIbw476ZuhO1nmZ62rLyj9nVDYtpafknmZQApJg3z/fbYQ==
+  dependencies:
+    intl-format-cache "^4.2.39"
+    intl-messageformat-parser "^5.1.4"
 
 intl-relativeformat@^2.1.0:
   version "2.2.0"
@@ -9684,14 +9718,6 @@ sax@^1.2.4, sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
-
-scheduler@^0.18.0:
-  version "0.18.0"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.18.0.tgz#5901ad6659bc1d8f3fdaf36eb7a67b0d6746b1c4"
-  integrity sha512-agTSHR1Nbfi6ulI0kYNK0203joW2Y5W4po4l+v03tOoiJKpTBbxpNhWDvqc/4IcOw+KLmSiQLTasZ4cab2/UWQ==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
 
 scheduler@^0.19.0:
   version "0.19.0"
