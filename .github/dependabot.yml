@@ -1,0 +1,49 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "20:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: sidekiq-unique-jobs
+    versions:
+    - 6.0.25
+    - 7.0.1
+    - 7.0.2
+    - 7.0.4
+    - 7.0.7
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "20:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: redis
+    versions:
+    - 3.1.2
+  - dependency-name: intl-messageformat
+    versions:
+    - 9.4.4
+    - 9.4.6
+    - 9.4.7
+    - 9.4.9
+    - 9.5.2
+    - 9.5.3
+    - 9.6.3
+    - 9.6.6
+    - 9.6.7
+  - dependency-name: pg
+    versions:
+    - 8.5.1
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
