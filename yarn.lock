@@ -8903,7 +8903,7 @@ react-is@^16.12.0, react-is@^16.3.2, react-is@^16.7.0, react-is@^16.8.1, react-i
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
 
-react-lifecycles-compat@^3.0.2, react-lifecycles-compat@^3.0.4:
+react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
@@ -8945,13 +8945,13 @@ react-overlays@^0.9.1:
     react-transition-group "^2.2.1"
     warning "^3.0.0"
 
-react-redux-loading-bar@^4.0.8:
-  version "4.0.8"
-  resolved "https://registry.yarnpkg.com/react-redux-loading-bar/-/react-redux-loading-bar-4.0.8.tgz#e84d59d1517b79f53b0f39c8ddb40682af648c1b"
-  integrity sha512-BpR1tlYrYKFtGhxa7nAKc0dpcV33ZgXJ/jKNLpDDaxu2/cCxbkWQt9YlWT+VLw1x/7qyNYY4DH48bZdtmciSpg==
+react-redux-loading-bar@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/react-redux-loading-bar/-/react-redux-loading-bar-5.0.2.tgz#e62d527892b0a7682baa2ebbb3fd34c0b807e485"
+  integrity sha512-M+gK/Q79UG3iVljv6myRJptdQ5sIKdYDigeukwGocvWLCgWFdtpeP8IY8lBIYsqHXtuFBP/gj7E3qvGwCtcpRQ==
   dependencies:
-    prop-types "^15.6.2"
-    react-lifecycles-compat "^3.0.2"
+    prop-types "^15.7.2"
+    react-lifecycles-compat "^3.0.4"
 
 react-redux@^7.2.0:
   version "7.2.0"
@@ -9684,14 +9684,6 @@ sax@^1.2.4, sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
-
-scheduler@^0.18.0:
-  version "0.18.0"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.18.0.tgz#5901ad6659bc1d8f3fdaf36eb7a67b0d6746b1c4"
-  integrity sha512-agTSHR1Nbfi6ulI0kYNK0203joW2Y5W4po4l+v03tOoiJKpTBbxpNhWDvqc/4IcOw+KLmSiQLTasZ4cab2/UWQ==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
 
 scheduler@^0.19.0:
   version "0.19.0"
